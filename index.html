@@ -1,4 +1,16 @@
-<h1>I am Junaid Farooq</h1>
+---
+layout: default
+---
 
+<h1>Articles</h1>
 
-Hey Marco, it works
+<ul>
+  {% for post in site.posts %}
+    {% unless post.draft %}
+    <li>
+      <time>{{ post.date | date:"%b %d, %Y" }}</time>
+      <a href="{{ site.baseurl }}{{ post.url | remove_first: '/' }}">{{ post.title }}</a>
+    </li>
+    {% endunless %}
+  {% endfor %}
+</ul>
