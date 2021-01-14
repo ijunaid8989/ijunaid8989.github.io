@@ -4,7 +4,11 @@ title: About
 
 # About
 
-failure. programmer. failure. ..Ashfaq Ahmed **ideal** "It may have escaped your notice but life isn't fair." – Snape
+failure. programmer. failure.
+
+...Ashfaq Ahmed **ideal**
+
+..."It may have escaped your notice but life isn't fair." – Snape
 
 
 ## Elsewhere
