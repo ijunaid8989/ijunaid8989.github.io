@@ -1,3 +1,11 @@
+GIT
+  remote: https://github.com/motevets/pathutil.git
+  revision: 3451a10c362fc867b20c7e471a551b31c40a0246
+  branch: fix-issue-4
+  specs:
+    pathutil (0.16.2)
+      forwardable-extended (~> 2.6)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -216,8 +224,6 @@ GEM
     octokit (4.20.0)
       faraday (>= 0.9)
       sawyer (~> 0.8.0, >= 0.5.3)
-    pathutil (0.16.2)
-      forwardable-extended (~> 2.6)
     public_suffix (3.1.1)
     racc (1.5.2)
     rb-fsevent (0.10.4)
@@ -251,6 +257,7 @@ GEM
       unf_ext
     unf_ext (0.0.7.7)
     unicode-display_width (1.7.0)
+    webrick (1.7.0)
     zeitwerk (2.4.2)
 
 PLATFORMS
@@ -258,6 +265,8 @@ PLATFORMS
 
 DEPENDENCIES
   github-pages
+  pathutil!
+  webrick (~> 1.7)
 
 BUNDLED WITH
-   2.2.5
+   2.2.8
