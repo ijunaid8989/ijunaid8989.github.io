@@ -1,38 +1,41 @@
+### Site metadata ###
+
 name: Junaid Farooq
 title: Junaid Farooq
 description: Ruby, Elixir, DevOps
 meta_description: "Ruby, Elixir, DevOps"
 
+### Build settings ###
+
+url: "https://ijunaidfarooq.com"
+baseurl: ""
+
+permalink: /:year/:title/
+
 aboutPage: true
-github: [metadata]
 
-markdown: kramdown
-highlighter: rouge
-livereload: true
+github:
+  - metadata
 
-plugins: [jekyll-paginate]
+plugins:
+  - jekyll-paginate
+  
 paginate: 20
-baseurl: /
-domain_name: 'https://ijunaidfarooq.com/'
 
-permalink:       /:year/:title/
-
+# Reminder that empty string matches all files.
 defaults:
-    -
-        scope:
-            path: "" # empty string for all files
-            type: pages
-        values:
-            layout: default
-    -
-        scope:
-            path: "" # empty string for all files
-            type: posts
-        values:
-            layout: post
-    -
-        scope:
-            path: ""
-            type: drafts
-        values:
-            layout: post
+  - scope:
+      path: "" 
+      type: posts
+    values:
+      layout: post
+  - scope:
+      path: ""
+      type: drafts
+    values:
+      layout: post
+  - scope:
+      path: "" 
+      type: pages
+    values:
+      layout: default
