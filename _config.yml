@@ -10,7 +10,7 @@ meta_description: "Ruby, Elixir, DevOps"
 url: "https://ijunaidfarooq.com"
 baseurl: ""
 
-permalink: /:year/:title/
+permalink: /:year/:month/:day/:title/
 
 aboutPage: true
 
