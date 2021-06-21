@@ -5,8 +5,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.name }}</title>
-  <link rel="shortcut icon" href="/assets/images/favicon.png">
+  <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
+  <meta name="description" content="{{ site.description }}">
+  
+  <link rel="shortcut icon" href="{% link assets/images/favicon.png %}">
 
   <link rel="stylesheet" href="/assets/css/remarkdown.css">
   <link rel="stylesheet" href="/assets/css/highlight.css">
@@ -16,11 +18,13 @@
 <body class="{{ page.class }}">
   <div class="container" data-rmd="hr-center ul-star">
     <header>
-      <span><a href="/">Junaid Farooq</a></span>
+      <span>
+        <a href="{% link index.md %}">{{ site.title }}</a>
+      </span>
 
       <nav>
-        <a href="/about">About</a>
-        <a href="/">Articles</a>
+        <a href="{% link about.md %}">About</a>
+        <a href="{% link index.md %}">Articles</a>
       </nav>
     </header>
 
@@ -28,8 +32,9 @@
       {{ content }}
     </section>
   </div>
+  
   <footer>
-    Copyright 2021 Junaid Farooq
+    Copyright 2021 {{ site.name }}
     / Built with <a href="https://fvsch.com/code/remarkdown">ReMarkdown</a>
   </footer>
 </body>
