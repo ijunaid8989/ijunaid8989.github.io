@@ -4,8 +4,9 @@ title: "Something About Pakistan."
 ---
 
 ## Something About Pakistan.
-----------------------------
+#### Something About Pakistan.
 
-![alt Pakistan](/assets/images/something-about-pakistan/1.jpg "Picture waas taken while the time of separation in 1947.")
+<img src="/assets/images/something-about-pakistan/1.jpg" alt="Pakistan"
+	title="Picture waas taken while the time of separation in 1947." width="100%" />
 
 > Quote here.

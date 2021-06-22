@@ -14,27 +14,19 @@
   <link rel="stylesheet" href="/assets/css/styles.css">
 
 </head>
-<body class="{{ page.class }} remarkdown">
-  <div class="container"">
-    <header>
-      <span>
-        <a href="{% link index.html %}">{{ site.title }}</a>
-      </span>
+<body class="{{ page.class }}">
+  <nav class="remarkdown">
+    <span>
+      <a href="{% link index.html %}">{{ site.title }}</a>
+    </span>
+    <br>
+    <a href="{% link about.md %}">About</a>
+    <a href="{% link index.html %}">Articles</a>
+  </nav>
 
-      <nav>
-        <a href="{% link about.md %}">About</a>
-        <a href="{% link index.html %}">Articles</a>
-      </nav>
-    </header>
+  <main class="remarkdown">
+    {{ content }}  
+  </main>
 
-    <section>
-      {{ content }}
-    </section>
-  </div>
-  
-  <footer>
-    Copyright 2021 {{ site.name }}
-    / Built with <a href="https://fvsch.com/code/remarkdown">ReMarkdown</a>
-  </footer>
 </body>
 </html>
