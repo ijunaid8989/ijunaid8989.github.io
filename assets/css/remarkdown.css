@@ -1,5 +1,5 @@
-/*! ReMarkdown 3.1.0 (MIT) https://fvsch.github.io/remarkdown/ */
-/* includes: all styles; defaults: hn-reset hn-hash ul-hyphen ol-decimal quote-gt em-star strong-star a-bracket code-tick pre-indent hr-star; */
+/*! ReMarkdown-zero 3.1.0 (MIT) https://fvsch.github.io/remarkdown/ */
+/* includes: all styles; defaults: none; */
 .remarkdown {
   line-height: 1.5;
   font-family: monospace, monospace;
@@ -11,44 +11,44 @@
   font-family: inherit;
 }
 
-.remarkdown h1 {
+.remarkdown.hn-reset h1 {
   font-size: inherit;
   font-weight: inherit;
-  margin-top: 2.25em;
+  margin-top: 1.5em;
   margin-bottom: 1.5em;
 }
-.remarkdown h2 {
+.remarkdown.hn-reset h2 {
   font-size: inherit;
   font-weight: inherit;
-  margin-top: 2.25em;
+  margin-top: 1.5em;
   margin-bottom: 1.5em;
 }
-.remarkdown h3,
-.remarkdown h4,
-.remarkdown h5,
-.remarkdown h6 {
+.remarkdown.hn-reset h3,
+.remarkdown.hn-reset h4,
+.remarkdown.hn-reset h5,
+.remarkdown.hn-reset h6 {
   font-size: inherit;
   font-weight: inherit;
   margin-top: 1.5em;
   margin-bottom: 1.5em;
 }
 
-.remarkdown h1::before {
+.remarkdown.hn-hash h1::before {
   content: "# ";
 }
-.remarkdown h2::before {
+.remarkdown.hn-hash h2::before {
   content: "## ";
 }
-.remarkdown h3::before {
+.remarkdown.hn-hash h3::before {
   content: "### ";
 }
-.remarkdown h4::before {
+.remarkdown.hn-hash h4::before {
   content: "#### ";
 }
-.remarkdown h5::before {
+.remarkdown.hn-hash h5::before {
   content: "##### ";
 }
-.remarkdown h6::before {
+.remarkdown.hn-hash h6::before {
   content: "###### ";
 }
 
@@ -103,7 +103,7 @@
   text-align: center;
 }
 
-.remarkdown hr::before {
+.remarkdown.hr-star hr::before {
   content: "* * * *";
 }
 
@@ -142,10 +142,10 @@
   content: "*";
 }
 
-.remarkdown ul {
+.remarkdown.ul-hyphen ul {
   list-style: none;
 }
-.remarkdown ul > li::before {
+.remarkdown.ul-hyphen ul > li::before {
   float: left;
   width: 1ch;
   margin-left: -4ch;
@@ -162,14 +162,14 @@
   margin-bottom: 0;
 }
 
-.remarkdown ol {
+.remarkdown.ol-decimal ol {
   list-style: none;
   counter-reset: rmd-ol;
 }
-.remarkdown ol > li {
+.remarkdown.ol-decimal ol > li {
   counter-increment: rmd-ol;
 }
-.remarkdown ol > li::before {
+.remarkdown.ol-decimal ol > li::before {
   float: left;
   margin-left: -4ch;
   margin-right: 1ch;
@@ -203,10 +203,10 @@
   content: counter(rmd-ol, lower-alpha) ".";
 }
 
-.remarkdown a::before {
+.remarkdown.a-bracket a::before {
   content: "[";
 }
-.remarkdown a::after {
+.remarkdown.a-bracket a::after {
   content: "]";
 }
 
@@ -224,8 +224,8 @@
   font-weight: normal;
 }
 
-.remarkdown em::before,
-.remarkdown em::after {
+.remarkdown.em-star em::before,
+.remarkdown.em-star em::after {
   content: "*";
 }
 
@@ -234,8 +234,8 @@
   content: "_";
 }
 
-.remarkdown strong::before,
-.remarkdown strong::after {
+.remarkdown.strong-star strong::before,
+.remarkdown.strong-star strong::after {
   content: "**";
 }
 
@@ -244,12 +244,12 @@
   content: "__";
 }
 
-.remarkdown code::before,
-.remarkdown code::after {
+.remarkdown.code-tick code::before,
+.remarkdown.code-tick code::after {
   content: "`";
 }
-.remarkdown pre code::before,
-.remarkdown pre code::after {
+.remarkdown.code-tick pre code::before,
+.remarkdown.code-tick pre code::after {
   display: none;
 }
 
@@ -259,7 +259,7 @@
   tab-size: 4;
 }
 
-.remarkdown pre {
+.remarkdown.pre-indent pre {
   margin-left: 4ch;
   margin-right: 0ch;
 }
@@ -302,10 +302,10 @@
   padding: 0;
 }
 
-.remarkdown blockquote {
+.remarkdown.quote-gt blockquote {
   position: relative;
 }
-.remarkdown blockquote::before {
+.remarkdown.quote-gt blockquote::before {
   position: absolute;
   top: 0;
   left: -2ch;
