@@ -17,7 +17,7 @@ install: ## Install dependencies
 	bundle install
 
 s start: ## Start development server at port 4444
-	bundle exec jekyll server --livereload --watch --future --port 4444
+	bundle exec jekyll server --config _config_local.yml --livereload --watch --future --port 4444
 
 build: ## Production build
 	JEKYLL_ENV=production bundle exec jekyll build --trace

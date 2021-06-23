@@ -127,6 +127,7 @@ layout: table_wrappers
         {% endif %}
       {% endunless %}
       <div id="main-content" class="main-content" role="main">
+        {{ content }}
 
         {% if page.has_children == true and page.has_toc != false %}
           <hr>
