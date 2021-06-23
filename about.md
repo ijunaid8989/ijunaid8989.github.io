@@ -6,7 +6,7 @@ title: About
 
 failure. programmer. failure.
 
-...Ashfaq Ahmed **ideal**
+...Ashfaq Ahmed... **ideal**
 
 ..."It may have escaped your notice but life isn't fair." – Snape
 

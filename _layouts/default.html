@@ -10,12 +10,12 @@
   
   <link rel="shortcut icon" href="{% link assets/images/favicon.png %}">
 
-  <link rel="stylesheet" href="/assets/css/remarkdown.css">
   <link rel="stylesheet" href="/assets/css/styles.css">
+  <link rel="stylesheet" href="/assets/css/remarkdown.css">
 
 </head>
 <body class="{{ page.class }}">
-  <nav class="remarkdown hn-reset hn-hash h1-underline ul-star a-bracket pre-tick quote-gt">
+  <nav class="remarkdown a-bracket">
     <span>
       <a href="{% link index.html %}">{{ site.title }}</a>
     </span>
@@ -24,7 +24,7 @@
     <a href="{% link index.html %}">Articles</a>
   </nav>
 
-  <main class="remarkdown">
+  <main class="remarkdown hn-reset hn-hash h1-underline h2-underline a-bracket pre-tick quote-gt ul-plus strong-star">
     {{ content }}  
   </main>
 
