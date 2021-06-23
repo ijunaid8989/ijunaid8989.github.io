@@ -12,6 +12,34 @@ baseurl: ""
 
 permalink: /:year/:month/:day/:title/
 
+theme: just-the-docs
+
+search_enabled: true
+
+search:
+  # Split pages into sections that can be searched individually
+  # Supports 1 - 6, default: 2
+  heading_level: 2
+  # Maximum amount of previews per search result
+  # Default: 3
+  previews: 3
+  # Maximum amount of words to display before a matched word in the preview
+  # Default: 5
+  preview_words_before: 5
+  # Maximum amount of words to display after a matched word in the preview
+  # Default: 10
+  preview_words_after: 10
+  # Set the search token separator
+  # Default: /[\s\-/]+/
+  # Example: enable support for hyphenated search words
+  tokenizer_separator: /[\s/]+/
+  # Display the relative url in search results
+  # Supports true (default) or false
+  rel_url: true
+  # Enable or disable the search button that appears in the bottom right corner of every page
+  # Supports true or false (default)
+  button: false
+
 aboutPage: true
 
 github:
@@ -24,18 +52,25 @@ paginate: 20
 
 # Reminder that empty string matches all files.
 defaults:
-  - scope:
-      path: "" 
-      type: posts
+  -
+    scope:
+      path: "_*" # an empty string here means all files in the project
     values:
-      layout: post
-  - scope:
-      path: ""
-      type: drafts
-    values:
-      layout: post
-  - scope:
-      path: "" 
-      type: pages
-    values:
-      layout: default
+      layout: "default"
+
+
+# footer_content: "Copyright &copy; 2017-2020 Patrick Marsceill. Distributed by an <a href=\"https://github.com/pmarsceill/just-the-docs/tree/master/LICENSE.txt\">MIT license.</a>"
+
+# Footer last edited timestamp
+last_edit_timestamp: true # show or hide edit time - page must have `last_modified_date` defined in the frontmatter
+last_edit_time_format: "%b %e %Y at %I:%M %p" # uses ruby's time format: https://ruby-doc.org/stdlib-2.7.0/libdoc/time/rdoc/Time.html
+
+# Footer "Edit this page on GitHub" link text
+gh_edit_link: true # show or hide edit this page link
+gh_edit_link_text: "Edit this page on GitHub."
+gh_edit_repository: "https://github.com/ijunaid8989/ijunaid8989.github.io"
+gh_edit_branch: "ijunaidfarooq" # the branch that your docs is served from
+gh_edit_view_mode: "tree" # "tree" or "edit" if you want the user to jump into the editor immediately
+
+back_to_top: true
+back_to_top_text: "Back to top"
