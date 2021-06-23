@@ -5,5 +5,7 @@ group :jekyll_plugins do
 end
 
 
+gem "just-the-docs"
+
 gem 'pathutil', :github => 'motevets/pathutil', :branch => 'fix-issue-4'
 gem "webrick", "~> 1.7"
