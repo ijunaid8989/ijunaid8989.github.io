@@ -18,7 +18,7 @@ failure. programmer. failure.
 
 
 ## Experience
-- since 2015 Programmer, [Evercam](https://evercam.io)
+- 2015-2022 Programmer, [Evercam](https://evercam.io)
 - 2014-2015 Development Executive, [Highrise Technologies]()
 - 2012-2014 Web Developer, [WebSol Technologies]()
 
@@ -27,6 +27,4 @@ failure. programmer. failure.
 
 ## Contact
 
-- [junaid@evercam.io for emailing]()
-- [@ijunaidfarooq at elixir-lang Slack](https://elixir-slackin.herokuapp.com/)
-- [@ijunaid9900 at Skype]()
+- [fjunaid252@gmail.com for emailing]()
