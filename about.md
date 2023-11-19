@@ -25,7 +25,7 @@ failure. programmer. failure.
 - 2012-2014 Web Developer, [WebSol Technologies]()
 
 ## Education
-- 2010-2014 Bachelor of Science, Computer Science, [GCUF](http://gcuf.edu.pk)
+- Computers
 
 ## Contact
 
