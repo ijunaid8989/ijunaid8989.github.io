@@ -18,7 +18,8 @@ failure. programmer. failure.
 
 
 ## Experience
-- 2022- * Senior Software Engineer Elixir/ReactJS, [Nectarine Credit](https://nectarinecredit.com)
+- 2024- * Senior Software Engineering Consultant
+- 2022-2024 Senior Software Engineer Elixir/ReactJS, [Nectarine Credit](https://nectarinecredit.com)
 - 2022-2022 Senior Software Programmer - Fintech Team (2 Months), [Safeboda](https://safeboda.com)
 - 2015-2022 Programmer, [Evercam](https://evercam.io)
 - 2014-2015 Development Executive, [Highrise Technologies]()
