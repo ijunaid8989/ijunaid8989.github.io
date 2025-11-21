@@ -68,32 +68,28 @@ nav_order: 2
       </div>
       <div class="logos-container" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 2rem; align-items: center; justify-items: center;">
         <div class="logo-item">
-          <img src="/assets/images/logos/yolo.png" alt="Yolo" class="company-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+          <img src="/assets/images/logos/yolo_group_logo.jpeg" alt="Yolo" class="company-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
           <div style="display: none; font-weight: 600; color: #667eea;">Yolo</div>
         </div>
         <div class="logo-item">
-          <img src="/assets/images/logos/nectarine-credit.png" alt="Nectarine Credit" class="company-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+          <img src="/assets/images/logos/nectarinecredit.svg" alt="Nectarine Credit" class="company-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
           <div style="display: none; font-weight: 600; color: #667eea;">Nectarine Credit</div>
         </div>
         <div class="logo-item">
-          <img src="/assets/images/logos/helium-health.png" alt="Helium Health" class="company-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+          <img src="/assets/images/logos/heliulmheal.jpg" alt="Helium Health" class="company-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
           <div style="display: none; font-weight: 600; color: #667eea;">Helium Health</div>
         </div>
         <div class="logo-item">
-          <img src="/assets/images/logos/greyscout.png" alt="GreyScout" class="company-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+          <img src="/assets/images/logos/greyscout_logo.jpeg" alt="GreyScout" class="company-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
           <div style="display: none; font-weight: 600; color: #667eea;">GreyScout</div>
         </div>
         <div class="logo-item">
-          <img src="/assets/images/logos/truely.png" alt="Truely" class="company-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+          <img src="/assets/images/logos/truely-black.svg" alt="Truely" class="company-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
           <div style="display: none; font-weight: 600; color: #667eea;">Truely</div>
         </div>
         <div class="logo-item">
-          <img src="/assets/images/logos/whippy.png" alt="Whippy" class="company-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+          <img src="/assets/images/logos/whippy.svg" alt="Whippy" class="company-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
           <div style="display: none; font-weight: 600; color: #667eea;">Whippy</div>
-        </div>
-        <div class="logo-item">
-          <img src="/assets/images/logos/catalx.png" alt="Catalx" class="company-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
-          <div style="display: none; font-weight: 600; color: #667eea;">Catalx</div>
         </div>
       </div>
     </div>
