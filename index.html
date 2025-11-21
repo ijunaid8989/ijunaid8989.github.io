@@ -4,15 +4,95 @@ title: Articles
 nav_order: 1
 ---
 
-<h1>Articles</h1>
+<div style="max-width: 900px; margin: 0 auto; padding: 2rem 1rem;">
+  <div style="text-align: center; margin-bottom: 3rem;">
+    <h1 style="font-family: 'Playfair Display', serif; font-size: 3rem; color: #667eea; margin-bottom: 1rem; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">
+      Articles
+    </h1>
+    <p style="color: #6b7280; font-size: 1.1rem;">Thoughts, insights, and technical deep-dives</p>
+  </div>
 
-<ul>
-  {% for post in site.posts %}
-    {% unless post.draft %}
-    <li>
-      <time>{{ post.date | date:"%b %d, %Y" }}</time>
-      <a href="{{ site.baseurl }}{{ post.url | remove_first: '/' }}">{{ post.title }}</a>
-    </li>
-    {% endunless %}
-  {% endfor %}
-</ul>
+  <div class="articles-container" style="display: grid; gap: 2rem;">
+    {% for post in site.posts %}
+      {% unless post.draft %}
+      <article class="article-card" style="background: white; border: 1px solid #e5e7eb; border-radius: 12px; padding: 2rem; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05); transition: all 0.3s ease; position: relative; overflow: hidden;">
+        <div style="position: absolute; top: 0; left: 0; width: 4px; height: 100%; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);"></div>
+        <div style="padding-left: 1.5rem;">
+          <time style="display: block; color: #667eea; font-size: 0.9rem; font-weight: 600; margin-bottom: 0.75rem; text-transform: uppercase; letter-spacing: 0.5px;">
+            {{ post.date | date:"%b %d, %Y" }}
+          </time>
+          <h2 style="margin: 0; margin-bottom: 1rem;">
+            <a href="{{ site.baseurl }}{{ post.url | remove_first: '/' }}" 
+               style="color: #1f2937; text-decoration: none; font-family: 'Playfair Display', serif; font-size: 1.75rem; font-weight: 600; display: block; transition: color 0.3s ease;">
+              {{ post.title }}
+            </a>
+          </h2>
+          {% if post.excerpt %}
+          <p style="color: #6b7280; line-height: 1.7; margin: 0;">
+            {{ post.excerpt | strip_html | truncatewords: 30 }}
+          </p>
+          {% endif %}
+        </div>
+      </article>
+      {% endunless %}
+    {% endfor %}
+  </div>
+
+  {% if site.posts.size == 0 %}
+  <div style="text-align: center; padding: 4rem 2rem; color: #9ca3af;">
+    <p style="font-size: 1.2rem;">No articles yet. Check back soon!</p>
+  </div>
+  {% endif %}
+</div>
+
+<style>
+  .article-card {
+    animation: fadeInUp 0.6s ease forwards;
+    opacity: 0;
+  }
+
+  .article-card:nth-child(1) { animation-delay: 0.1s; }
+  .article-card:nth-child(2) { animation-delay: 0.2s; }
+  .article-card:nth-child(3) { animation-delay: 0.3s; }
+  .article-card:nth-child(4) { animation-delay: 0.4s; }
+  .article-card:nth-child(5) { animation-delay: 0.5s; }
+  .article-card:nth-child(n+6) { animation-delay: 0.6s; }
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .article-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(102, 126, 234, 0.15);
+    border-color: #667eea;
+  }
+
+  .article-card:hover h2 a {
+    color: #667eea;
+  }
+
+  .article-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(102, 126, 234, 0.02) 0%, rgba(118, 75, 162, 0.02) 100%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+  }
+
+  .article-card:hover::before {
+    opacity: 1;
+  }
+</style>

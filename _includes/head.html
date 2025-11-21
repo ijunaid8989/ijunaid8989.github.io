@@ -73,4 +73,26 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  <script>
+    // Fix navigation highlighting for index page
+    document.addEventListener('DOMContentLoaded', function() {
+      const currentPath = window.location.pathname;
+      const navLinks = document.querySelectorAll('.nav-list-link');
+      
+      navLinks.forEach(link => {
+        const linkPath = new URL(link.href).pathname;
+        // Remove trailing slashes for comparison
+        const normalizedCurrent = currentPath.replace(/\/$/, '') || '/';
+        const normalizedLink = linkPath.replace(/\/$/, '') || '/';
+        
+        if (normalizedCurrent === normalizedLink || 
+            (normalizedCurrent === '/' && linkPath === '/index.html') ||
+            (normalizedCurrent === '/' && linkPath === '/')) {
+          link.classList.add('active');
+          link.closest('.nav-list-item')?.classList.add('active');
+        }
+      });
+    });
+  </script>
+
 </head>
