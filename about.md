@@ -61,58 +61,63 @@ nav_order: 2
       <div class="experience-meta">Remote | September 2022 - Present</div>
     </div>
 
-    <div style="margin-top: 1.5rem;">
-      <h4 style="color: #667eea; font-size: 1.2rem; margin-bottom: 0.75rem; margin-top: 1.5rem;">Yolo - July 2024 - October 2025</h4>
-      <ul class="experience-list">
-        <li>Architected and implemented Telegram Bot API integrations using Elixir GenServers for real-time message processing</li>
-        <li>Built comprehensive OpenSearch/Elasticsearch integration with advanced Kibana-like search capabilities</li>
-        <li>Developed custom Elixir libraries for handling Telegram webhooks and managing bot state across distributed nodes</li>
-        <li>Implemented complex search aggregations and faceted search using OpenSearch DSL with Elixir</li>
-        <li>Designed fault-tolerant supervision trees for managing multiple bot connections and search indexing pipelines</li>
-        <li>Optimized search performance achieving sub-100ms response times for complex queries across millions of documents</li>
-      </ul>
+    <!-- Company Logos Grid -->
+    <div class="company-logos-grid" style="margin: 2rem 0; padding: 2rem; background: #f9fafb; border-radius: 12px;">
+      <div style="text-align: center; margin-bottom: 1.5rem;">
+        <h4 style="color: #667eea; font-size: 1.1rem; font-weight: 600; text-transform: uppercase; letter-spacing: 1px;">Consulting Clients</h4>
+      </div>
+      <div class="logos-container" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 2rem; align-items: center; justify-items: center;">
+        <div class="logo-item">
+          <img src="/assets/images/logos/yolo.png" alt="Yolo" class="company-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+          <div style="display: none; font-weight: 600; color: #667eea;">Yolo</div>
+        </div>
+        <div class="logo-item">
+          <img src="/assets/images/logos/nectarine-credit.png" alt="Nectarine Credit" class="company-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+          <div style="display: none; font-weight: 600; color: #667eea;">Nectarine Credit</div>
+        </div>
+        <div class="logo-item">
+          <img src="/assets/images/logos/helium-health.png" alt="Helium Health" class="company-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+          <div style="display: none; font-weight: 600; color: #667eea;">Helium Health</div>
+        </div>
+        <div class="logo-item">
+          <img src="/assets/images/logos/greyscout.png" alt="GreyScout" class="company-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+          <div style="display: none; font-weight: 600; color: #667eea;">GreyScout</div>
+        </div>
+        <div class="logo-item">
+          <img src="/assets/images/logos/truely.png" alt="Truely" class="company-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+          <div style="display: none; font-weight: 600; color: #667eea;">Truely</div>
+        </div>
+        <div class="logo-item">
+          <img src="/assets/images/logos/whippy.png" alt="Whippy" class="company-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+          <div style="display: none; font-weight: 600; color: #667eea;">Whippy</div>
+        </div>
+        <div class="logo-item">
+          <img src="/assets/images/logos/catalx.png" alt="Catalx" class="company-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+          <div style="display: none; font-weight: 600; color: #667eea;">Catalx</div>
+        </div>
+      </div>
+    </div>
 
-      <h4 style="color: #667eea; font-size: 1.2rem; margin-bottom: 0.75rem; margin-top: 1.5rem;">Nectarine Credit (Fintech) - June 2022 - August 2024</h4>
+    <!-- Combined Work Experience -->
+    <div style="margin-top: 2rem;">
+      <h4 style="color: #667eea; font-size: 1.2rem; margin-bottom: 1.5rem; padding-bottom: 0.75rem; border-bottom: 2px solid #e5e7eb;">Key Achievements & Contributions</h4>
       <ul class="experience-list">
-        <li>Developed core banking features using Elixir Phoenix and Absinthe GraphQL</li>
-        <li>Integrated complex third-party financial APIs including Netsuite and API Deck</li>
-        <li>Built microservices for payment processing and transaction reconciliation</li>
-        <li>Implemented comprehensive test suites achieving 95% code coverage</li>
-      </ul>
-
-      <h4 style="color: #667eea; font-size: 1.2rem; margin-bottom: 0.75rem; margin-top: 1.5rem;">Helium Health (Healthtech) - November 2021 - March 2023</h4>
-      <ul class="experience-list">
-        <li>Maintained critical healthcare API infrastructure serving 100K+ daily requests</li>
-        <li>Developed patient management features with React Apollo GraphQL frontend</li>
-        <li>Led migration from monolithic to microservices architecture</li>
-        <li>Integrated with Meddy platform post-acquisition using Elixir Phoenix APIs</li>
-      </ul>
-
-      <h4 style="color: #667eea; font-size: 1.2rem; margin-bottom: 0.75rem; margin-top: 1.5rem;">GreyScout</h4>
-      <ul class="experience-list">
-        <li>Developed integrations with Amazon Buy Box APIs for e-commerce marketplace management</li>
-        <li>Built robust API clients for Amazon marketplace data retrieval and processing</li>
-        <li>Implemented data synchronization and monitoring systems for Amazon product listings</li>
-      </ul>
-
-      <h4 style="color: #667eea; font-size: 1.2rem; margin-bottom: 0.75rem; margin-top: 1.5rem;">Truely</h4>
-      <ul class="experience-list">
-        <li>Built unlimited packages system for travel eSIM solutions</li>
-        <li>Developed scalable architecture for managing eSIM package configurations and subscriptions</li>
-        <li>Implemented real-time package activation and management features</li>
-      </ul>
-
-      <h4 style="color: #667eea; font-size: 1.2rem; margin-bottom: 0.75rem; margin-top: 1.5rem;">Whippy</h4>
-      <ul class="experience-list">
-        <li>Developed form builder platform with dynamic form creation and validation capabilities</li>
-        <li>Built intuitive drag-and-drop form designer interface</li>
-        <li>Implemented form data collection, storage, and processing pipelines</li>
-      </ul>
-
-      <h4 style="color: #667eea; font-size: 1.2rem; margin-bottom: 0.75rem; margin-top: 1.5rem;">Catalx - July 2023 - August 2023</h4>
-      <ul class="experience-list">
-        <li>Built high-performance data processing pipelines using GenStage</li>
-        <li>Optimized database queries reducing response times by 60%</li>
+        <li>Architected and implemented Telegram Bot API integrations using Elixir GenServers for real-time message processing (Yolo)</li>
+        <li>Built comprehensive OpenSearch/Elasticsearch integration with advanced Kibana-like search capabilities, achieving sub-100ms response times for complex queries across millions of documents (Yolo)</li>
+        <li>Developed custom Elixir libraries for handling Telegram webhooks and managing bot state across distributed nodes (Yolo)</li>
+        <li>Designed fault-tolerant supervision trees for managing multiple bot connections and search indexing pipelines (Yolo)</li>
+        <li>Developed core banking features using Elixir Phoenix and Absinthe GraphQL (Nectarine Credit)</li>
+        <li>Integrated complex third-party financial APIs including Netsuite and API Deck (Nectarine Credit)</li>
+        <li>Built microservices for payment processing and transaction reconciliation with 95% code coverage (Nectarine Credit)</li>
+        <li>Maintained critical healthcare API infrastructure serving 100K+ daily requests (Helium Health)</li>
+        <li>Developed patient management features with React Apollo GraphQL frontend (Helium Health)</li>
+        <li>Led migration from monolithic to microservices architecture (Helium Health)</li>
+        <li>Integrated with Meddy platform post-acquisition using Elixir Phoenix APIs (Helium Health)</li>
+        <li>Developed integrations with Amazon Buy Box APIs for e-commerce marketplace management (GreyScout)</li>
+        <li>Built robust API clients for Amazon marketplace data retrieval and processing (GreyScout)</li>
+        <li>Built unlimited packages system for travel eSIM solutions with scalable architecture (Truely)</li>
+        <li>Developed form builder platform with dynamic form creation and drag-and-drop designer interface (Whippy)</li>
+        <li>Built high-performance data processing pipelines using GenStage, optimizing database queries by 60% (Catalx)</li>
       </ul>
     </div>
   </div>

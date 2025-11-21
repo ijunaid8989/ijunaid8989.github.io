@@ -212,6 +212,56 @@ a.nav-list-link[href="/"]:not([href*="/"]):not([href*="?"]) {
   border-color: #667eea;
 }
 
+/* Company Logos Styling */
+.company-logos-grid {
+  background: linear-gradient(135deg, #f9fafb 0%, #ffffff 100%);
+  border: 1px solid #e5e7eb;
+}
+
+.logos-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 2rem;
+  align-items: center;
+  justify-items: center;
+}
+
+.logo-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 80px;
+  padding: 1rem;
+  background: white;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+  transition: all 0.3s ease;
+  width: 100%;
+  max-width: 150px;
+}
+
+.logo-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(102, 126, 234, 0.15);
+  border-color: #667eea;
+}
+
+.company-logo {
+  max-width: 100%;
+  max-height: 60px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  filter: grayscale(100%);
+  opacity: 0.7;
+  transition: all 0.3s ease;
+}
+
+.logo-item:hover .company-logo {
+  filter: grayscale(0%);
+  opacity: 1;
+}
+
 @media (max-width: 768px) {
   .about-header h1 {
     font-size: 2rem;
@@ -227,6 +277,16 @@ a.nav-list-link[href="/"]:not([href*="/"]):not([href*="?"]) {
   
   .article-card {
     padding: 1.5rem;
+  }
+  
+  .logos-container {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 1rem;
+  }
+  
+  .logo-item {
+    max-width: 120px;
+    min-height: 60px;
   }
 }
 
