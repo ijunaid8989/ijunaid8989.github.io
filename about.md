@@ -67,29 +67,35 @@ nav_order: 2
         <h4 style="color: #667eea; font-size: 1.1rem; font-weight: 600; text-transform: uppercase; letter-spacing: 1px;">Consulting Clients</h4>
       </div>
       <div class="logos-container" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 2rem; align-items: center; justify-items: center;">
-        <div class="logo-item">
+        <div class="logo-item" data-company="Yolo">
           <img src="/assets/images/logos/yolo_group_logo.jpeg" alt="Yolo" class="company-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
           <div style="display: none; font-weight: 600; color: #667eea;">Yolo</div>
+          <span class="logo-tooltip">Yolo</span>
         </div>
-        <div class="logo-item">
+        <div class="logo-item" data-company="Nectarine Credit">
           <img src="/assets/images/logos/nectarinecredit.svg" alt="Nectarine Credit" class="company-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
           <div style="display: none; font-weight: 600; color: #667eea;">Nectarine Credit</div>
+          <span class="logo-tooltip">Nectarine Credit</span>
         </div>
-        <div class="logo-item">
+        <div class="logo-item" data-company="Helium Health">
           <img src="/assets/images/logos/heliulmheal.jpg" alt="Helium Health" class="company-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
           <div style="display: none; font-weight: 600; color: #667eea;">Helium Health</div>
+          <span class="logo-tooltip">Helium Health</span>
         </div>
-        <div class="logo-item">
+        <div class="logo-item" data-company="GreyScout">
           <img src="/assets/images/logos/greyscout_logo.jpeg" alt="GreyScout" class="company-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
           <div style="display: none; font-weight: 600; color: #667eea;">GreyScout</div>
+          <span class="logo-tooltip">GreyScout</span>
         </div>
-        <div class="logo-item">
+        <div class="logo-item" data-company="Truely">
           <img src="/assets/images/logos/truely-black.svg" alt="Truely" class="company-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
           <div style="display: none; font-weight: 600; color: #667eea;">Truely</div>
+          <span class="logo-tooltip">Truely</span>
         </div>
-        <div class="logo-item">
+        <div class="logo-item" data-company="Whippy">
           <img src="/assets/images/logos/whippy.svg" alt="Whippy" class="company-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
           <div style="display: none; font-weight: 600; color: #667eea;">Whippy</div>
+          <span class="logo-tooltip">Whippy</span>
         </div>
       </div>
     </div>
