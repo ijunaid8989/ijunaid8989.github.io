@@ -50,6 +50,9 @@ plugins:
   
 paginate: 20
 
+# Show future-dated posts
+future: true
+
 # Reminder that empty string matches all files.
 defaults:
   -
