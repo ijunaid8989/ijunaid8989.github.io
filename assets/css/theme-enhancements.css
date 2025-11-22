@@ -45,25 +45,28 @@ body {
 
 /* Navigation - Simple & Clean - Override default theme */
 .side-bar .site-nav {
-  padding: 1rem 0;
+  padding: 1rem 0.5rem;
 }
 
 .side-bar .nav-list {
-  padding: 0;
-  margin: 0;
+  padding: 0 !important;
+  margin: 0 !important;
   list-style: none;
 }
 
 .side-bar .nav-list .nav-list-item {
-  margin: 0.5rem 0;
+  margin: 0.25rem 0 !important;
   position: relative;
+  padding: 0;
 }
 
 .side-bar .nav-list .nav-list-item .nav-list-link {
   color: rgba(255, 255, 255, 0.85) !important;
-  padding: 0.75rem 1.5rem !important;
+  padding: 0.875rem 1.25rem !important;
+  padding-left: 1.25rem !important;
+  padding-right: 1.25rem !important;
   border-radius: 8px !important;
-  margin: 0;
+  margin: 0 !important;
   transition: all 0.2s ease;
   display: block;
   font-weight: 500;
@@ -73,6 +76,9 @@ body {
   position: relative;
   min-height: auto !important;
   line-height: 1.5 !important;
+  text-align: left;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .side-bar .nav-list .nav-list-item .nav-list-link:hover {
@@ -94,11 +100,25 @@ body {
 
 .side-bar .nav-list .nav-list-item .nav-list-expander {
   color: rgba(255, 255, 255, 0.6) !important;
+  right: 0.5rem !important;
+  top: 50% !important;
+  transform: translateY(-50%);
 }
 
 .side-bar .nav-list .nav-list-item .nav-list-expander:hover {
   background: rgba(255, 255, 255, 0.1) !important;
   background-image: none !important;
+}
+
+/* Ensure proper alignment for nested lists */
+.side-bar .nav-list .nav-list-item > .nav-list {
+  padding-left: 1rem !important;
+  margin-top: 0.25rem;
+}
+
+.side-bar .nav-list .nav-list-item > .nav-list .nav-list-item .nav-list-link {
+  padding-left: 2rem !important;
+  font-size: 0.9rem !important;
 }
 
 /* Main Content Area */
