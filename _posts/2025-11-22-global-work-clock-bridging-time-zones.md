@@ -8,7 +8,7 @@ date: 2025-11-22
 
 ## The Universal Rhythm of 9 to 6
 
-Every morning, millions of people around the world begin their day with a familiar routine. By 9 AM, they're at their desks, ready to tackle the day ahead. Six hours later, at 6 PM, they close their laptops and return to their personal lives. This rhythm—9 AM to 6 PM—has become the heartbeat of the modern workplace.
+Every morning, millions of people around the world begin their day with a familiar routine. By 9 AM, they're at their desks, ready to tackle the day ahead. Nine hours later, at 6 PM, they close their laptops and return to their personal lives. This rhythm—9 AM to 6 PM—has become the heartbeat of the modern workplace.
 
 But what happens when your team doesn't share the same sunrise? When your 9 AM is someone else's midnight? When your lunch break overlaps with their end-of-day wrap-up? This is the reality of our interconnected world, where the simple question "Is anyone working right now?" becomes a complex puzzle of time zone conversions and missed connections.
 
