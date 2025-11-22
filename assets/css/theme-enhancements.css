@@ -43,47 +43,62 @@ body {
   opacity: 0.9;
 }
 
-/* Navigation - Simple & Clean */
-.site-nav {
+/* Navigation - Simple & Clean - Override default theme */
+.side-bar .site-nav {
   padding: 1rem 0;
 }
 
-.nav-list {
+.side-bar .nav-list {
   padding: 0;
   margin: 0;
   list-style: none;
 }
 
-.nav-list-item {
+.side-bar .nav-list .nav-list-item {
   margin: 0.5rem 0;
+  position: relative;
 }
 
-.nav-list-link {
+.side-bar .nav-list .nav-list-item .nav-list-link {
   color: rgba(255, 255, 255, 0.85) !important;
   padding: 0.75rem 1.5rem !important;
-  border-radius: 8px;
+  border-radius: 8px !important;
   margin: 0;
   transition: all 0.2s ease;
   display: block;
   font-weight: 500;
-  font-size: 0.95rem;
-  background: transparent;
+  font-size: 0.95rem !important;
+  background: transparent !important;
+  background-image: none !important;
   position: relative;
+  min-height: auto !important;
+  line-height: 1.5 !important;
 }
 
-.nav-list-link:hover {
+.side-bar .nav-list .nav-list-item .nav-list-link:hover {
   color: white !important;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.1) !important;
+  background-image: none !important;
 }
 
-.nav-list-link.active {
+.side-bar .nav-list .nav-list-item .nav-list-link.active {
   color: white !important;
-  background: rgba(102, 126, 234, 0.2);
+  background: rgba(102, 126, 234, 0.2) !important;
+  background-image: none !important;
   font-weight: 600;
 }
 
-.nav-list-item.active {
+.side-bar .nav-list .nav-list-item.active {
   background: transparent;
+}
+
+.side-bar .nav-list .nav-list-item .nav-list-expander {
+  color: rgba(255, 255, 255, 0.6) !important;
+}
+
+.side-bar .nav-list .nav-list-item .nav-list-expander:hover {
+  background: rgba(255, 255, 255, 0.1) !important;
+  background-image: none !important;
 }
 
 /* Main Content Area */
